@@ -3,8 +3,8 @@ const NavBar = () => {
 
     return(
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <Link className="navbar-brand pl-5 fs-3" to={`/`}>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-info">
+      <Link className="navbar-brand pl-5 fs-3 p-3" to={`/`}>
         Citas Médicas
       </Link>
       <button

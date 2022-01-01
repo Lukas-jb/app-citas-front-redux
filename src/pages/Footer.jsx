@@ -1,8 +1,12 @@
+import "bootswatch/dist/sandstone/bootstrap.min.css";
+
 const Footer = () => {
 
     return(
         <div>
-            <h1>hola mundo desde el footer</h1>
+            <footer className="bg-info p-2">
+                <p>Powered by <strong>David Diaz Herrera </strong>y <strong>Lukas Jimenez</strong></p>
+            </footer>
         </div>
     )
 
