@@ -15,7 +15,7 @@ const CitasPage = () => {
             <h1>List Citas</h1>
             {isLoading && <h5>Cargando...</h5> }
             {errorMessage && <h1>{errorMessage}</h1> }
-            {citas && citas.map(citas =><p>{citas.nombrePaciente + " " + " " + citas.apellidosPaciente + " " + citas.fechaReservaCita + " " + citas.horaReservaCita + " " + citas.nombreMedico}</p>) }
+            {citas && citas.map(citas =><p>{citas.nombrePaciente + " " + " " + citas.apellidosPaciente + " " + citas.fechaReservaCita + " " + citas.horaReservaCita + " " + citas.nombreMedico + " "}</p>) }
             
         </div>
     )

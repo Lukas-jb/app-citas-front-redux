@@ -8,6 +8,7 @@ import Footer from './pages/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "bootswatch/dist/sandstone/bootstrap.min.css";
 import PadecimientoPage from './pages/PadecimientoPage';
+import NotFound from './pages/NotFound';
 
 const store = configureStore();
 
@@ -21,6 +22,8 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/citasReactivas" component={CitasPage} />
               <Route path="/padecimientos" component={PadecimientoPage} />
+
+              <Route path="*" component={NotFound} />
             </Switch>
           <Footer />
         </Router>
