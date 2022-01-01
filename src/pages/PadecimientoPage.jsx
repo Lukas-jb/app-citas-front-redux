@@ -4,7 +4,7 @@ import { padecimientosLoadAsync } from "../redux/reducers/padecimientos/padecimi
 
 const PadecimientoPage = () => {
     const dispatch = useDispatch();
-    const {isLoading,padecimientos,errorMessage}=useSelector((state)=>state.padecimiento);
+    const {isLoading,padecimientos,errorMessage}=useSelector((state)=>state.padecimientos);
 
     useEffect(()=>{
         dispatch(padecimientosLoadAsync());
@@ -15,7 +15,7 @@ const PadecimientoPage = () => {
             <h1>Lista Padecimientos</h1>
             {isLoading && <h1>cargando...</h1> }
             {errorMessage && <h1>{errorMessage}</h1> }
-            {padecimientos && padecimientos.map(padecimientos => <p>{padecimientos.nombrePadecimiento}</p>) }
+            {padecimientos && padecimientos.map(padecimientos => <p>{padecimientos.nombrePadecimiento + " " + padecimientos.tratamiento}</p>) }
         </div>
     )
 }
