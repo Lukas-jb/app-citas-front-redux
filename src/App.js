@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import NavBar from './pages/NavBar';
 import Footer from './pages/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import "bootswatch/dist/lumen/bootstrap.min.css";
+import "bootswatch/dist/sandstone/bootstrap.min.css";
 import PadecimientoPage from './pages/PadecimientoPage';
 
 const store = configureStore();
