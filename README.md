@@ -1,4 +1,4 @@
-* Integrantes DAVID DÍAZ HERRERA - LUKAS JIMENEZ BUENO
+# Integrantes DAVID DÍAZ HERRERA - LUKAS JIMENEZ BUENO
 
 # Getting Started with Create React App
 
